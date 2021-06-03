@@ -18,13 +18,13 @@ NOT:
 Repository'i kendi bilgisayarınıza klonlayın.
 
 ```bash
-git clone https://git.github.com/crosstech/crosstech-frontend-challenge
+git clone https://github.com/crosstech/crosstech-frontend-challenge-api.git
 ```
 
 Aşağıdaki komut ile Npm paketlerini yükleyin.
 
 ```bash
-cd crosstech-frontend-challenge
+cd crosstech-frontend-challenge-api
 npm install
 ```
 

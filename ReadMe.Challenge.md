@@ -1,6 +1,6 @@
 # Task Management System
 
-Bu proje Node.JS ile hazırlanmış basit bir RESTFul API'dır.
+Bu proje Node.JS ile hazırlanmış basit bir RESTful API'dır.
 
 Sizden; Task Management System adlı bu backend projesi için React kullanarak basit bir SPA(Single Page Application) Frontend uygulaması geliştirmenizi bekliyoruz.
 
@@ -101,7 +101,7 @@ Bu veriler Number tipinde Task'a ait "Status" property verisi olarak kullanılma
 &nbsp;
 &nbsp;
 
-## Sistem Bulunması Gereken Özellikler
+## Geliştirilecek Frontend Uygulamasında Bulunması Gereken Özellikler
 
 1. Kullanıcı sisteme Email bilgisi ile giriş yapabilmelidir.
 2. Kullanıcı sistemdeki tüm Task'ları listeleyebilmelidir.

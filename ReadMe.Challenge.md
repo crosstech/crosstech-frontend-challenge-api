@@ -144,8 +144,7 @@ NOT:
 
 - Postman Collection'da "Login" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 
-Http istek tipi: POST
-İstek yapılacak adres:
+Http "POST" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/auth/login
@@ -203,8 +202,7 @@ NOT:
 - Postman Collection'da "GetAll" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task
@@ -257,8 +255,7 @@ NOT:
 - Postman Collection'da "GetMyTasks" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/my-tasks
@@ -300,8 +297,7 @@ NOT:
 - Postman Collection'da "GetPendingTasks" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/pendings
@@ -343,8 +339,7 @@ NOT:
 - Postman Collection'da "GetTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/8054
@@ -398,8 +393,7 @@ NOT:
 - Postman Collection'da "CreateTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: POST
-İstek yapılacak adres:
+Http "POST" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task
@@ -458,8 +452,7 @@ NOT:
 - Postman Collection'da "UpdateTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: PUT
-İstek yapılacak adres:
+Http "PUT" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/4381
@@ -470,14 +463,16 @@ URL'in bulunan "4381" numarası bir Task'ın Id'sidir. Bu numarayı güncellemek
 Gönderilmesi gereken request verisi aşağıdaki gibi olmalıdır.
 
 ```json
- {
+{
     "title": "All Products Price List",
     "description": "We need to All Products Price List in this week, Thanks"
 }
 ```
 
-Title: Task'a ait başlık
-Description: Task'a ait açıklama
+Gönderilen veriler:
+
+- Title: Task'a ait başlık
+- Description: Task'a ait açıklama
 
 Bu isteğe cevap olarak gelen response verisi aşağıdaki gibidir.
 
@@ -517,8 +512,7 @@ NOT:
 - Postman Collection'da "DeleteTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/4381
@@ -564,8 +558,7 @@ NOT:
 - Postman Collection'da "CompleteTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/complete/8054
@@ -611,8 +604,7 @@ NOT:
 - Postman Collection'da "RejectTask" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/complete/8054
@@ -664,8 +656,7 @@ NOT:
 
 - Postman Collection'da "AllUsers" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/auth/all-users
@@ -711,8 +702,7 @@ NOT:
 - Postman Collection'da "Me" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 - Bu işlemi yapabilmek için Login sonucunda elde edilen JWT Token, bu istekte Authorization Http Header'ine Bearer olarak eklenmelidir.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/auth/me
@@ -749,8 +739,7 @@ NOT:
 
 - Postman Collection'da "ResetData" isminde bu isteğin hazır hali vardır. Bilgi ve Test etmek için Postman'i kullanabilirsiniz.
 
-Http istek tipi: GET
-İstek yapılacak adres:
+Http "GET" olarak istek yapılacak adres:
 
 ```bash
 http://localhost:5000/api/task/reset-data

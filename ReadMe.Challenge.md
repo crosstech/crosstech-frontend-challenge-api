@@ -6,7 +6,7 @@ Sizden; Task Management System adlı bu backend projesi için React kullanarak b
 
 ## Değerlendirme Kriterleri
 
-1. React'i ve konseplerini kullanabilme becerisi
+1. React'i ve konseptlerini kullanabilme becerisi
 2. Component tabanlı UI geliştirme becerisi
 3. State yönetim becerisi
 4. RESTFul API iletişim becerisi
@@ -32,7 +32,7 @@ Sizden; Task Management System adlı bu backend projesi için React kullanarak b
 
 Bu backend uygulaması basit bir şekilde şirketteki departmanların birbirleri arasındaki yapılması gereken işlerin takip edilmesini sağlamaktadır.
 Her departmanda çalışan kullanıcılar başka bir departmanın yapmasını istediği bir işi oluşturup, o departmanın işi tamamlamasını takip edebilmektedir.
-Kullanıcılar giriş yapabilir, Task oluşturup, kendi oluşturduğu Task'ları güncelleyip silebilir, çalıştığı departmana atanan Task'ları tamamlayabilir veya reddedebilirler. Aynı zamanda bir kullanıcı kendi oluşturduğu Task'ları listeleyebilir, çalıştığı departmana atanan Task'ları veya sistemde bulunan tüm Task'ları listeyelebilir.
+Kullanıcılar giriş yapabilir, Task oluşturup kendi oluşturduğu Task'ları güncelleyebilir, kendi oluşturduğu Task'ları silebilir, çalıştığı departmana atanan Task'ları tamamlayabilir veya reddedebilirler. Aynı zamanda bir kullanıcı kendi oluşturduğu Task'ları listeleyebilir, çalıştığı departmana atanan Task'ları veya sistemde bulunan tüm Task'ları listeyelebilir.
 
 NOT:
 
@@ -47,7 +47,7 @@ NOT:
 Backend uygulamasını test etmek ve giden/gelen verileri vs. görebilmek için Postman uygulamasını kullanabilirsiniz. Bu proje içinde yer alan "postman_collection.json" dosyasını kendi Postman uygulamanıza import ederek backend uygulamasını test edebilirsiniz.
 Postman import işlemi hakkında daha fazla bilgi için [Postman Import](https://apitransform.com/how-to-import-a-collection-into-postman/)
 
-İmport işlemi dışında yapmanız gereken herhangi bir işlem bulunmamaktadır. Test için gerekli Url, Request body, Authorization Token vs. gibi tüm ayarlamalar yapılmıştır. Doğrudan istekleri çalıştırabilirsiniz.
+Import işlemi dışında yapmanız gereken herhangi bir işlem bulunmamaktadır. Test için gerekli Url, Request body, Authorization Token vs. gibi tüm ayarlamalar yapılmıştır. Doğrudan istekleri çalıştırabilirsiniz.
 
 &nbsp;
 &nbsp;
@@ -126,7 +126,7 @@ Bu veriler Number tipinde Task'a ait "Status" property verisi olarak kullanılma
 &nbsp;
 &nbsp;
 
-## Özelliklerin Implemetasyonu
+## Özelliklerin Implementasyonu
 
 Özelliklerin implentasyonuna geçmeden önce aşağıdaki adımları yaptığınızdan emin olun.
 
@@ -174,13 +174,13 @@ Bu isteğe cevap olarak gelen response verisi aşağıdaki gibidir.
 ```
 
 Bu bilgileri gerektiğinde uygulama içinde kullanabilmek için saklamalısınız.
-Örneğin; bir kullanıcının bir Task'ı onaylayap onaylayamacağını kontrol etmek için bu verinin içindeki kullanıcın ait olduğu departmanı belirten "department" bilgisi ile herhangi bir Task'a ait "AssignedDepartment" bilgisini karşılaştırabilirsiniz. Eğer veriler aynı ise kullanıcı bu Task'ı onaylayabilme veya reddebilme yetkisine sahip olduğunu anlayabilirsiniz.
+Örneğin; bir kullanıcının bir Task'ı onaylayap onaylayamacağını kontrol etmek için bu verinin içindeki kullanıcın ait olduğu departmanı belirten "department" bilgisi ile herhangi bir Task'a ait "AssignedDepartment" bilgisini karşılaştırabilirsiniz. Eğer veriler aynı ise kullanıcı bu Task'ı onaylayabilme veya reddedebilme yetkisine sahip olduğunu anlayabilirsiniz.
 
 Önemli: Response verisinde bulunan "jwtToken" verisi, bundan sonraki tüm isteklerde backend'e iletilmelidir. Aksi takdirde tüm istekler "401 UnAuthorized" hatası verecektir.
-Backend'e Authorization Http Header olarak Baerer Token şeklinde iletilmesi gerekmektedir.
+Backend'e Authorization Http Header olarak Bearer Token şeklinde iletilmesi gerekmektedir.
 
 ```bash
-Authorization: Baerer eyJhbGciOiJI.........LUEzyFypE
+Authorization: Bearer eyJhbGciOiJI.........LUEzyFypE
 ```
 
 Bu token verisi backend'de kullanıcının tanınmasına imkan verecektir.
@@ -345,7 +345,7 @@ Http "GET" olarak istek yapılacak adres:
 http://localhost:5000/api/task/8054
 ```
 
-URL'in bulunan "8054" numarası bir Task'ın Id'sidir. Bu numarayı detayını getirilmek istediğiniz Task'a ait Id bilgisi ile değiştirin.
+URL'in bulunan "8054" numarası bir Task'ın Id'sidir. Bu numarayı detayını getirmek istediğiniz Task'a ait Id bilgisi ile değiştirin.
 
 Bu isteğe cevap olarak gelen response verisi aşağıdaki gibidir.
 

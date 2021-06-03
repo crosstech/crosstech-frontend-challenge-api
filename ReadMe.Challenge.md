@@ -174,7 +174,7 @@ Bu isteğe cevap olarak gelen response verisi aşağıdaki gibidir.
 ```
 
 Bu bilgileri gerektiğinde uygulama içinde kullanabilmek için saklamalısınız.
-Örneğin; bir kullanıcının bir Task'ı onaylayap onaylayamacağını kontrol etmek için bu verinin içindeki kullanıcın ait olduğu departmanı belirten "department" bilgisi ile herhangib bir Task'a ait "AssignedDepartment" bilgisini karşılaştırabilirsiniz. Eğer veriler aynı ise kullanıcı bu Task'ı onaylayabilme veya reddebilme yetkisine sahip olduğunu anlayabilirsiniz.
+Örneğin; bir kullanıcının bir Task'ı onaylayap onaylayamacağını kontrol etmek için bu verinin içindeki kullanıcın ait olduğu departmanı belirten "department" bilgisi ile herhangi bir Task'a ait "AssignedDepartment" bilgisini karşılaştırabilirsiniz. Eğer veriler aynı ise kullanıcı bu Task'ı onaylayabilme veya reddebilme yetkisine sahip olduğunu anlayabilirsiniz.
 
 Önemli: Response verisinde bulunan "jwtToken" verisi, bundan sonraki tüm isteklerde backend'e iletilmelidir. Aksi takdirde tüm istekler "401 UnAuthorized" hatası verecektir.
 Backend'e Authorization Http Header olarak Baerer Token şeklinde iletilmesi gerekmektedir.

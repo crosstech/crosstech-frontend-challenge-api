@@ -33,7 +33,7 @@ npm install
 Projeyi çalıştırmak için aşağıdaki komutu terminalinize yazın.
 
 ```bash
-node index.js
+npm run dev
 ```
 
 ## Projeyi Test Etme
